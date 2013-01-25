@@ -235,3 +235,29 @@
 #1 /Users/cecilesablayrolles/Sites/cakephp-trek/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
 #2 /Users/cecilesablayrolles/Sites/cakephp-trek/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2013-01-25 19:37:50 Error: [MissingControllerException] Controller class PagesController could not be found.
+#0 /Users/cecilesablayrolles/Sites/cakephp-trek/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-25 19:38:01 Error: [MissingActionException] Action UsersController::login() could not be found.
+#0 /Users/cecilesablayrolles/Sites/cakephp-trek/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/cecilesablayrolles/Sites/cakephp-trek/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/cecilesablayrolles/Sites/cakephp-trek/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-25 19:48:02 Error: [MissingActionException] Action UsersController::login() could not be found.
+#0 /Users/cecilesablayrolles/Sites/cakephp-trek/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/cecilesablayrolles/Sites/cakephp-trek/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/cecilesablayrolles/Sites/cakephp-trek/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-25 19:48:03 Error: [MissingControllerException] Controller class GuideSubmissionsController could not be found.
+#0 /Users/cecilesablayrolles/Sites/cakephp-trek/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2013-01-25 19:48:05 Error: [MissingActionException] Action UsersController::login() could not be found.
+#0 /Users/cecilesablayrolles/Sites/cakephp-trek/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/cecilesablayrolles/Sites/cakephp-trek/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/cecilesablayrolles/Sites/cakephp-trek/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2013-01-25 20:01:00 Error: [MissingActionException] Action UsersController::login() could not be found.
+#0 /Users/cecilesablayrolles/Sites/cakephp-trek/lib/Cake/Routing/Dispatcher.php(186): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/cecilesablayrolles/Sites/cakephp-trek/lib/Cake/Routing/Dispatcher.php(161): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/cecilesablayrolles/Sites/cakephp-trek/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

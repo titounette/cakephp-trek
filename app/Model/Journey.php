@@ -4,9 +4,10 @@ App::uses('AppModel', 'Model');
  * Journey Model
  *
  * @property User $User
+ * @property Zone $Zone
  * @property Guide $Guide
+ * @property Group $Group
  * @property RateJourney $RateJourney
- * @property Tourist $Tourist
  * @property Track $Track
  */
 class Journey extends AppModel {
@@ -34,9 +35,23 @@ class Journey extends AppModel {
 			'fields' => '',
 			'order' => ''
 		),
+		'Zone' => array(
+			'className' => 'Zone',
+			'foreignKey' => 'zone_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
 		'Guide' => array(
 			'className' => 'Guide',
 			'foreignKey' => 'guide_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		),
+		'Group' => array(
+			'className' => 'Group',
+			'foreignKey' => 'group_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
@@ -51,19 +66,6 @@ class Journey extends AppModel {
 	public $hasMany = array(
 		'RateJourney' => array(
 			'className' => 'RateJourney',
-			'foreignKey' => 'journey_id',
-			'dependent' => false,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'exclusive' => '',
-			'finderQuery' => '',
-			'counterQuery' => ''
-		),
-		'Tourist' => array(
-			'className' => 'Tourist',
 			'foreignKey' => 'journey_id',
 			'dependent' => false,
 			'conditions' => '',

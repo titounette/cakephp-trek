@@ -10,6 +10,13 @@ App::uses('AppModel', 'Model');
  */
 class Guide extends AppModel {
 
+/**
+ * Display field
+ *
+ * @var string
+ */
+	public $displayField = 'firstname';
+
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
 
