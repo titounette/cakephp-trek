@@ -3,11 +3,13 @@ App::uses('AppModel', 'Model');
 /**
  * Journey Model
  *
+ * @property Guide $Guide
  * @property User $User
  * @property Zone $Zone
  * @property Guide $Guide
- * @property Group $Group
+ * @property Tourist $Tourist
  * @property RateJourney $RateJourney
+ * @property Tourist $Tourist
  * @property Track $Track
  */
 class Journey extends AppModel {
@@ -21,6 +23,21 @@ class Journey extends AppModel {
 
 
 	//The Associations below have been created with all possible keys, those that are not needed can be removed
+
+/**
+ * hasOne associations
+ *
+ * @var array
+ */
+	public $hasOne = array(
+		'Guide' => array(
+			'className' => 'Guide',
+			'foreignKey' => 'journey_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		)
+	);
 
 /**
  * belongsTo associations
@@ -49,9 +66,9 @@ class Journey extends AppModel {
 			'fields' => '',
 			'order' => ''
 		),
-		'Group' => array(
-			'className' => 'Group',
-			'foreignKey' => 'group_id',
+		'Tourist' => array(
+			'className' => 'Tourist',
+			'foreignKey' => 'tourist_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''
@@ -66,6 +83,19 @@ class Journey extends AppModel {
 	public $hasMany = array(
 		'RateJourney' => array(
 			'className' => 'RateJourney',
+			'foreignKey' => 'journey_id',
+			'dependent' => false,
+			'conditions' => '',
+			'fields' => '',
+			'order' => '',
+			'limit' => '',
+			'offset' => '',
+			'exclusive' => '',
+			'finderQuery' => '',
+			'counterQuery' => ''
+		),
+		'Tourist' => array(
+			'className' => 'Tourist',
 			'foreignKey' => 'journey_id',
 			'dependent' => false,
 			'conditions' => '',

@@ -47,10 +47,9 @@ class JourneysController extends AppController {
 				$this->Session->setFlash(__('The journey could not be saved. Please, try again.'));
 			}
 		}
-		$users = $this->Journey->User->find('list');
 		$zones = $this->Journey->Zone->find('list');
 		$guides = $this->Journey->Guide->find('list');
-		$this->set(compact('users', 'zones', 'guides'));
+		$this->set(compact('zones', 'guides'));
 	}
 
 /**
@@ -75,10 +74,9 @@ class JourneysController extends AppController {
 		} else {
 			$this->request->data = $this->Journey->read(null, $id);
 		}
-		$users = $this->Journey->User->find('list');
 		$zones = $this->Journey->Zone->find('list');
 		$guides = $this->Journey->Guide->find('list');
-		$this->set(compact('users', 'zones', 'guides'));
+		$this->set(compact('zones', 'guides'));
 	}
 
 /**
@@ -145,10 +143,9 @@ class JourneysController extends AppController {
 				$this->Session->setFlash(__('The journey could not be saved. Please, try again.'));
 			}
 		}
-		$users = $this->Journey->User->find('list');
 		$zones = $this->Journey->Zone->find('list');
 		$guides = $this->Journey->Guide->find('list');
-		$this->set(compact('users', 'zones', 'guides'));
+		$this->set(compact('zones', 'guides'));
 	}
 
 /**
@@ -173,10 +170,9 @@ class JourneysController extends AppController {
 		} else {
 			$this->request->data = $this->Journey->read(null, $id);
 		}
-		$users = $this->Journey->User->find('list');
 		$zones = $this->Journey->Zone->find('list');
 		$guides = $this->Journey->Guide->find('list');
-		$this->set(compact('users', 'zones', 'guides'));
+		$this->set(compact('zones', 'guides'));
 	}
 
 /**

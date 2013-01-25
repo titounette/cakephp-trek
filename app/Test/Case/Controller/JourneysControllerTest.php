@@ -14,16 +14,16 @@ class JourneysControllerTest extends ControllerTestCase {
  */
 	public $fixtures = array(
 		'app.journey',
+		'app.zone',
+		'app.guide',
 		'app.user',
 		'app.group',
-		'app.guide_submission',
-		'app.guide',
-		'app.rate_guide',
-		'app.tourist',
 		'app.comments_guide',
 		'app.comments_journey',
 		'app.comments_track',
-		'app.zone',
+		'app.guide_submission',
+		'app.tourist',
+		'app.rate_guide',
 		'app.rate_journey',
 		'app.track'
 	);

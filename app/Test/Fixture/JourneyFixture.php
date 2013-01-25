@@ -19,6 +19,7 @@ class JourneyFixture extends CakeTestFixture {
 		'zone_id' => array('type' => 'integer', 'null' => true, 'default' => null),
 		'guide_id' => array('type' => 'integer', 'null' => true, 'default' => null),
 		'group_id' => array('type' => 'integer', 'null' => true, 'default' => null),
+		'tourist_id' => array('type' => 'integer', 'null' => true, 'default' => null),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'id', 'unique' => 1)
 		),
@@ -39,7 +40,8 @@ class JourneyFixture extends CakeTestFixture {
 			'user_id' => 1,
 			'zone_id' => 1,
 			'guide_id' => 1,
-			'group_id' => 1
+			'group_id' => 1,
+			'tourist_id' => 1
 		),
 	);
 
