@@ -4,7 +4,7 @@ App::uses('AppModel', 'Model');
  * Track Model
  *
  * @property Journey $Journey
- * @property Creator $Creator
+ * @property User $User
  */
 class Track extends AppModel {
 
@@ -78,9 +78,9 @@ class Track extends AppModel {
 			'fields' => '',
 			'order' => ''
 		),
-		'Creator' => array(
-			'className' => 'Creator',
-			'foreignKey' => 'creator_id',
+		'User' => array(
+			'className' => 'User',
+			'foreignKey' => 'user_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

@@ -47,6 +47,8 @@ class RateGuidesController extends AppController {
 				$this->Session->setFlash(__('The rate guide could not be saved. Please, try again.'));
 			}
 		}
+		$guides = $this->RateGuide->Guide->find('list');
+		$this->set(compact('guides'));
 	}
 
 /**
@@ -71,6 +73,8 @@ class RateGuidesController extends AppController {
 		} else {
 			$this->request->data = $this->RateGuide->read(null, $id);
 		}
+		$guides = $this->RateGuide->Guide->find('list');
+		$this->set(compact('guides'));
 	}
 
 /**
@@ -137,6 +141,8 @@ class RateGuidesController extends AppController {
 				$this->Session->setFlash(__('The rate guide could not be saved. Please, try again.'));
 			}
 		}
+		$guides = $this->RateGuide->Guide->find('list');
+		$this->set(compact('guides'));
 	}
 
 /**
@@ -161,6 +167,8 @@ class RateGuidesController extends AppController {
 		} else {
 			$this->request->data = $this->RateGuide->read(null, $id);
 		}
+		$guides = $this->RateGuide->Guide->find('list');
+		$this->set(compact('guides'));
 	}
 
 /**

@@ -20,6 +20,7 @@ class RateGuideFixture extends CakeTestFixture {
 	public $fields = array(
 		'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'primary'),
 		'rate' => array('type' => 'integer', 'null' => true, 'default' => null, 'length' => 10),
+		'guide_id' => array('type' => 'integer', 'null' => true, 'default' => null),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'id', 'unique' => 1)
 		),
@@ -34,7 +35,8 @@ class RateGuideFixture extends CakeTestFixture {
 	public $records = array(
 		array(
 			'id' => 1,
-			'rate' => 1
+			'rate' => 1,
+			'guide_id' => 1
 		),
 	);
 

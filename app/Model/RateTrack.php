@@ -3,7 +3,7 @@ App::uses('AppModel', 'Model');
 /**
  * RateTrack Model
  *
- * @property  $
+ * @property Track $Track
  */
 class RateTrack extends AppModel {
 
@@ -47,9 +47,9 @@ class RateTrack extends AppModel {
  * @var array
  */
 	public $belongsTo = array(
-		'' => array(
-			'className' => '',
-			'foreignKey' => 'id',
+		'Track' => array(
+			'className' => 'Track',
+			'foreignKey' => 'track_id',
 			'conditions' => '',
 			'fields' => '',
 			'order' => ''

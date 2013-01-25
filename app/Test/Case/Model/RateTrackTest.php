@@ -1,11 +1,11 @@
 <?php
-App::uses('RateGuide', 'Model');
+App::uses('RateTrack', 'Model');
 
 /**
- * RateGuide Test Case
+ * RateTrack Test Case
  *
  */
-class RateGuideTest extends CakeTestCase {
+class RateTrackTest extends CakeTestCase {
 
 /**
  * Fixtures
@@ -13,13 +13,17 @@ class RateGuideTest extends CakeTestCase {
  * @var array
  */
 	public $fixtures = array(
-		'app.rate_guide',
-		'app.guide',
+		'app.rate_track',
+		'app.track',
+		'app.journey',
+		'app.creator',
+		'app.zone',
 		'app.user',
 		'app.comments_guide',
 		'app.comments_journey',
 		'app.comments_track',
 		'app.guide_submission',
+		'app.guide',
 		'app.tourist'
 	);
 
@@ -30,7 +34,7 @@ class RateGuideTest extends CakeTestCase {
  */
 	public function setUp() {
 		parent::setUp();
-		$this->RateGuide = ClassRegistry::init('RateGuide');
+		$this->RateTrack = ClassRegistry::init('RateTrack');
 	}
 
 /**
@@ -39,7 +43,7 @@ class RateGuideTest extends CakeTestCase {
  * @return void
  */
 	public function tearDown() {
-		unset($this->RateGuide);
+		unset($this->RateTrack);
 
 		parent::tearDown();
 	}

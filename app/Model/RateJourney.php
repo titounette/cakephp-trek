@@ -3,6 +3,7 @@ App::uses('AppModel', 'Model');
 /**
  * RateJourney Model
  *
+ * @property Journey $Journey
  */
 class RateJourney extends AppModel {
 
@@ -36,5 +37,22 @@ class RateJourney extends AppModel {
 				//'on' => 'create', // Limit validation to 'create' or 'update' operations
 			),
 		),
+	);
+
+	//The Associations below have been created with all possible keys, those that are not needed can be removed
+
+/**
+ * belongsTo associations
+ *
+ * @var array
+ */
+	public $belongsTo = array(
+		'Journey' => array(
+			'className' => 'Journey',
+			'foreignKey' => 'journey_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		)
 	);
 }

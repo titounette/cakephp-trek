@@ -16,7 +16,14 @@ class TrackTest extends CakeTestCase {
 		'app.track',
 		'app.journey',
 		'app.creator',
-		'app.zone'
+		'app.zone',
+		'app.user',
+		'app.comments_guide',
+		'app.comments_journey',
+		'app.comments_track',
+		'app.guide_submission',
+		'app.guide',
+		'app.tourist'
 	);
 
 /**

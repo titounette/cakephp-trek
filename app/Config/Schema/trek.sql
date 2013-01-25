@@ -5,9 +5,9 @@
 # http://www.sequelpro.com/
 # http://code.google.com/p/sequel-pro/
 #
-# Host: localhost (MySQL 5.5.9)
+# Host: localhost (MySQL 5.1.44)
 # Database: trek
-# Generation Time: 2013-01-25 10:16:54 +0000
+# Generation Time: 2013-01-25 10:26:41 +0000
 # ************************************************************
 
 
@@ -125,6 +125,7 @@ DROP TABLE IF EXISTS `rate_guide`;
 CREATE TABLE `rate_guide` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `rate` int(10) DEFAULT NULL,
+  `guide_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
@@ -138,6 +139,7 @@ DROP TABLE IF EXISTS `rate_journey`;
 CREATE TABLE `rate_journey` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `rate` int(10) DEFAULT NULL,
+  `journey_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
@@ -151,6 +153,7 @@ DROP TABLE IF EXISTS `rate_track`;
 CREATE TABLE `rate_track` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `rate` int(10) DEFAULT NULL,
+  `track_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 

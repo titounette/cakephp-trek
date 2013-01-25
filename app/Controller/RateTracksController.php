@@ -47,6 +47,8 @@ class RateTracksController extends AppController {
 				$this->Session->setFlash(__('The rate track could not be saved. Please, try again.'));
 			}
 		}
+		$tracks = $this->RateTrack->Track->find('list');
+		$this->set(compact('tracks'));
 	}
 
 /**
@@ -71,6 +73,8 @@ class RateTracksController extends AppController {
 		} else {
 			$this->request->data = $this->RateTrack->read(null, $id);
 		}
+		$tracks = $this->RateTrack->Track->find('list');
+		$this->set(compact('tracks'));
 	}
 
 /**
@@ -137,6 +141,8 @@ class RateTracksController extends AppController {
 				$this->Session->setFlash(__('The rate track could not be saved. Please, try again.'));
 			}
 		}
+		$tracks = $this->RateTrack->Track->find('list');
+		$this->set(compact('tracks'));
 	}
 
 /**
@@ -161,6 +167,8 @@ class RateTracksController extends AppController {
 		} else {
 			$this->request->data = $this->RateTrack->read(null, $id);
 		}
+		$tracks = $this->RateTrack->Track->find('list');
+		$this->set(compact('tracks'));
 	}
 
 /**

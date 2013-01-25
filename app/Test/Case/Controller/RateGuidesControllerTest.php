@@ -13,7 +13,14 @@ class RateGuidesControllerTest extends ControllerTestCase {
  * @var array
  */
 	public $fixtures = array(
-		'app.rate_guide'
+		'app.rate_guide',
+		'app.guide',
+		'app.user',
+		'app.comments_guide',
+		'app.comments_journey',
+		'app.comments_track',
+		'app.guide_submission',
+		'app.tourist'
 	);
 
 /**

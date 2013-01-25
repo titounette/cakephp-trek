@@ -1,11 +1,11 @@
 <?php
-App::uses('RateJourneysController', 'Controller');
+App::uses('RateTracksController', 'Controller');
 
 /**
- * RateJourneysController Test Case
+ * RateTracksController Test Case
  *
  */
-class RateJourneysControllerTest extends ControllerTestCase {
+class RateTracksControllerTest extends ControllerTestCase {
 
 /**
  * Fixtures
@@ -13,11 +13,11 @@ class RateJourneysControllerTest extends ControllerTestCase {
  * @var array
  */
 	public $fixtures = array(
-		'app.rate_journey',
+		'app.rate_track',
+		'app.track',
 		'app.journey',
 		'app.creator',
 		'app.zone',
-		'app.track',
 		'app.user',
 		'app.comments_guide',
 		'app.comments_journey',

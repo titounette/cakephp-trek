@@ -47,6 +47,8 @@ class RateJourneysController extends AppController {
 				$this->Session->setFlash(__('The rate journey could not be saved. Please, try again.'));
 			}
 		}
+		$journeys = $this->RateJourney->Journey->find('list');
+		$this->set(compact('journeys'));
 	}
 
 /**
@@ -71,6 +73,8 @@ class RateJourneysController extends AppController {
 		} else {
 			$this->request->data = $this->RateJourney->read(null, $id);
 		}
+		$journeys = $this->RateJourney->Journey->find('list');
+		$this->set(compact('journeys'));
 	}
 
 /**
@@ -137,6 +141,8 @@ class RateJourneysController extends AppController {
 				$this->Session->setFlash(__('The rate journey could not be saved. Please, try again.'));
 			}
 		}
+		$journeys = $this->RateJourney->Journey->find('list');
+		$this->set(compact('journeys'));
 	}
 
 /**
@@ -161,6 +167,8 @@ class RateJourneysController extends AppController {
 		} else {
 			$this->request->data = $this->RateJourney->read(null, $id);
 		}
+		$journeys = $this->RateJourney->Journey->find('list');
+		$this->set(compact('journeys'));
 	}
 
 /**

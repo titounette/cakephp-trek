@@ -13,7 +13,18 @@ class RateJourneyTest extends CakeTestCase {
  * @var array
  */
 	public $fixtures = array(
-		'app.rate_journey'
+		'app.rate_journey',
+		'app.journey',
+		'app.creator',
+		'app.zone',
+		'app.track',
+		'app.user',
+		'app.comments_guide',
+		'app.comments_journey',
+		'app.comments_track',
+		'app.guide_submission',
+		'app.guide',
+		'app.tourist'
 	);
 
 /**

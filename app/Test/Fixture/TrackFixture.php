@@ -14,7 +14,7 @@ class TrackFixture extends CakeTestFixture {
 		'id' => array('type' => 'integer', 'null' => false, 'default' => null, 'key' => 'primary'),
 		'journey_id' => array('type' => 'integer', 'null' => true, 'default' => null),
 		'long' => array('type' => 'integer', 'null' => true, 'default' => null),
-		'creator_id' => array('type' => 'integer', 'null' => true, 'default' => null),
+		'user_id' => array('type' => 'integer', 'null' => true, 'default' => null),
 		'size' => array('type' => 'integer', 'null' => true, 'default' => null),
 		'level' => array('type' => 'integer', 'null' => true, 'default' => null),
 		'name' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 30, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
@@ -34,7 +34,7 @@ class TrackFixture extends CakeTestFixture {
 			'id' => 1,
 			'journey_id' => 1,
 			'long' => 1,
-			'creator_id' => 1,
+			'user_id' => 1,
 			'size' => 1,
 			'level' => 1,
 			'name' => 'Lorem ipsum dolor sit amet'
