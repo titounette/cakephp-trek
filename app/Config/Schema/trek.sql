@@ -7,7 +7,7 @@
 #
 # Host: localhost (MySQL 5.1.44)
 # Database: trek
-# Generation Time: 2013-01-25 10:26:41 +0000
+# Generation Time: 2013-01-25 10:41:38 +0000
 # ************************************************************
 
 
@@ -110,7 +110,7 @@ CREATE TABLE `journeys` (
   `name` varchar(30) DEFAULT NULL,
   `creation` date DEFAULT NULL,
   `max` int(11) DEFAULT NULL,
-  `creator_id` int(11) DEFAULT NULL,
+  `user_id` int(11) DEFAULT NULL,
   `zone_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
@@ -209,6 +209,15 @@ CREATE TABLE `users` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
+LOCK TABLES `users` WRITE;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+
+INSERT INTO `users` (`id`, `username`, `password`, `email`)
+VALUES
+	(2,'cecile','cecile','cecile@gmail.com');
+
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+UNLOCK TABLES;
 
 
 # Dump of table zones
