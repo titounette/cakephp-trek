@@ -5,9 +5,9 @@
 # http://www.sequelpro.com/
 # http://code.google.com/p/sequel-pro/
 #
-# Host: localhost (MySQL 5.1.44)
+# Host: localhost (MySQL 5.5.9)
 # Database: trek
-# Generation Time: 2013-01-25 10:04:43 +0000
+# Generation Time: 2013-01-25 10:16:54 +0000
 # ************************************************************
 
 
@@ -184,7 +184,7 @@ CREATE TABLE `tracks` (
   `id` int(11) unsigned NOT NULL AUTO_INCREMENT,
   `journey_id` int(11) DEFAULT NULL,
   `long` int(11) DEFAULT NULL,
-  `creator_id` int(11) DEFAULT NULL,
+  `user_id` int(11) DEFAULT NULL,
   `size` int(11) DEFAULT NULL,
   `level` int(11) DEFAULT NULL,
   `name` varchar(30) DEFAULT NULL,
