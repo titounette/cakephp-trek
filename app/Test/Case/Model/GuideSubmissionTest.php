@@ -15,9 +15,6 @@ class GuideSubmissionTest extends CakeTestCase {
 	public $fixtures = array(
 		'app.guide_submission',
 		'app.user',
-		'app.comments_guide',
-		'app.comments_journey',
-		'app.comments_track',
 		'app.guide',
 		'app.tourist'
 	);

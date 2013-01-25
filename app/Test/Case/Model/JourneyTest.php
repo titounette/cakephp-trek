@@ -14,18 +14,13 @@ class JourneyTest extends CakeTestCase {
  */
 	public $fixtures = array(
 		'app.journey',
-		'app.zone',
-		'app.guide',
 		'app.user',
-		'app.group',
-		'app.comments_guide',
-		'app.comments_journey',
-		'app.comments_track',
 		'app.guide_submission',
+		'app.guide',
 		'app.tourist',
-		'app.rate_guide',
 		'app.rate_journey',
-		'app.track'
+		'app.track',
+		'app.rate_track'
 	);
 
 /**

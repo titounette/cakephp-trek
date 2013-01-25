@@ -22,6 +22,7 @@ class GuideFixture extends CakeTestFixture {
 		'user_id' => array('type' => 'integer', 'null' => true, 'default' => null),
 		'picture' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 200, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
 		'group_id' => array('type' => 'integer', 'null' => true, 'default' => null),
+		'id_journey' => array('type' => 'integer', 'null' => true, 'default' => null),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'id', 'unique' => 1)
 		),
@@ -45,7 +46,8 @@ class GuideFixture extends CakeTestFixture {
 			'diplome' => 'Lorem ipsum dolor sit amet',
 			'user_id' => 1,
 			'picture' => 'Lorem ipsum dolor sit amet',
-			'group_id' => 1
+			'group_id' => 1,
+			'id_journey' => 1
 		),
 	);
 

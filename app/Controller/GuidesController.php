@@ -48,7 +48,8 @@ class GuidesController extends AppController {
 			}
 		}
 		$users = $this->Guide->User->find('list');
-		$this->set(compact('users'));
+		$groups = $this->Guide->Group->find('list');
+		$this->set(compact('users', 'groups'));
 	}
 
 /**
@@ -74,7 +75,8 @@ class GuidesController extends AppController {
 			$this->request->data = $this->Guide->read(null, $id);
 		}
 		$users = $this->Guide->User->find('list');
-		$this->set(compact('users'));
+		$groups = $this->Guide->Group->find('list');
+		$this->set(compact('users', 'groups'));
 	}
 
 /**
@@ -142,7 +144,8 @@ class GuidesController extends AppController {
 			}
 		}
 		$users = $this->Guide->User->find('list');
-		$this->set(compact('users'));
+		$groups = $this->Guide->Group->find('list');
+		$this->set(compact('users', 'groups'));
 	}
 
 /**
@@ -168,7 +171,8 @@ class GuidesController extends AppController {
 			$this->request->data = $this->Guide->read(null, $id);
 		}
 		$users = $this->Guide->User->find('list');
-		$this->set(compact('users'));
+		$groups = $this->Guide->Group->find('list');
+		$this->set(compact('users', 'groups'));
 	}
 
 /**

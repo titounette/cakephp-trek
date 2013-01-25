@@ -15,16 +15,13 @@ class GuideTest extends CakeTestCase {
 	public $fixtures = array(
 		'app.guide',
 		'app.user',
-		'app.group',
 		'app.guide_submission',
 		'app.tourist',
-		'app.comments_guide',
-		'app.comments_journey',
-		'app.comments_track',
+		'app.group',
 		'app.journey',
-		'app.zone',
 		'app.rate_journey',
 		'app.track',
+		'app.rate_track',
 		'app.rate_guide'
 	);
 

@@ -14,16 +14,7 @@ class TrackTest extends CakeTestCase {
  */
 	public $fixtures = array(
 		'app.track',
-		'app.journey',
-		'app.creator',
-		'app.zone',
-		'app.user',
-		'app.comments_guide',
-		'app.comments_journey',
-		'app.comments_track',
-		'app.guide_submission',
-		'app.guide',
-		'app.tourist'
+		'app.rate_track'
 	);
 
 /**
