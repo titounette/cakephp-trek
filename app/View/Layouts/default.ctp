@@ -1,6 +1,8 @@
 <html>
 <head>
 
+	<?php echo $this->Html->css('cake.generic');?>
+
 </head>
 
 <body>
