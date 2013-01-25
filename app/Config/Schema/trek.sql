@@ -7,7 +7,7 @@
 #
 # Host: localhost (MySQL 5.1.44)
 # Database: trek
-# Generation Time: 2013-01-25 10:41:38 +0000
+# Generation Time: 2013-01-25 10:50:37 +0000
 # ************************************************************
 
 
@@ -206,15 +206,16 @@ CREATE TABLE `users` (
   `username` varchar(100) DEFAULT NULL,
   `password` varchar(50) DEFAULT NULL,
   `email` varchar(200) DEFAULT NULL,
+  `role` varchar(30) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
 LOCK TABLES `users` WRITE;
 /*!40000 ALTER TABLE `users` DISABLE KEYS */;
 
-INSERT INTO `users` (`id`, `username`, `password`, `email`)
+INSERT INTO `users` (`id`, `username`, `password`, `email`, `role`)
 VALUES
-	(2,'cecile','cecile','cecile@gmail.com');
+	(2,'cecile','cecile','cecile@gmail.com',NULL);
 
 /*!40000 ALTER TABLE `users` ENABLE KEYS */;
 UNLOCK TABLES;
