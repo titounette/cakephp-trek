@@ -38,7 +38,7 @@
 		<th><?php echo __('Name'); ?></th>
 		<th><?php echo __('Creation'); ?></th>
 		<th><?php echo __('Max'); ?></th>
-		<th><?php echo __('Creator Id'); ?></th>
+		<th><?php echo __('User Id'); ?></th>
 		<th><?php echo __('Zone Id'); ?></th>
 		<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
@@ -50,7 +50,7 @@
 			<td><?php echo $journey['name']; ?></td>
 			<td><?php echo $journey['creation']; ?></td>
 			<td><?php echo $journey['max']; ?></td>
-			<td><?php echo $journey['creator_id']; ?></td>
+			<td><?php echo $journey['user_id']; ?></td>
 			<td><?php echo $journey['zone_id']; ?></td>
 			<td class="actions">
 				<?php echo $this->Html->link(__('View'), array('controller' => 'journeys', 'action' => 'view', $journey['id'])); ?>

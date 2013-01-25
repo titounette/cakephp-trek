@@ -10,6 +10,7 @@
 			<th><?php echo $this->Paginator->sort('level'); ?></th>
 			<th><?php echo $this->Paginator->sort('user_id'); ?></th>
 			<th><?php echo $this->Paginator->sort('picture'); ?></th>
+			<th><?php echo $this->Paginator->sort('group_id'); ?></th>
 			<th class="actions"><?php echo __('Actions'); ?></th>
 	</tr>
 	<?php
@@ -25,6 +26,9 @@
 			<?php echo $this->Html->link($tourist['User']['username'], array('controller' => 'users', 'action' => 'view', $tourist['User']['id'])); ?>
 		</td>
 		<td><?php echo h($tourist['Tourist']['picture']); ?>&nbsp;</td>
+		<td>
+			<?php echo $this->Html->link($tourist['Group']['name'], array('controller' => 'groups', 'action' => 'view', $tourist['Group']['id'])); ?>
+		</td>
 		<td class="actions">
 			<?php echo $this->Html->link(__('View'), array('action' => 'view', $tourist['Tourist']['id'])); ?>
 			<?php echo $this->Html->link(__('Edit'), array('action' => 'edit', $tourist['Tourist']['id'])); ?>
@@ -54,5 +58,7 @@
 		<li><?php echo $this->Html->link(__('New Tourist'), array('action' => 'add')); ?></li>
 		<li><?php echo $this->Html->link(__('List Users'), array('controller' => 'users', 'action' => 'index')); ?> </li>
 		<li><?php echo $this->Html->link(__('New User'), array('controller' => 'users', 'action' => 'add')); ?> </li>
+		<li><?php echo $this->Html->link(__('List Groups'), array('controller' => 'groups', 'action' => 'index')); ?> </li>
+		<li><?php echo $this->Html->link(__('New Group'), array('controller' => 'groups', 'action' => 'add')); ?> </li>
 	</ul>
 </div>

@@ -19,6 +19,7 @@ class TouristFixture extends CakeTestFixture {
 		'level' => array('type' => 'integer', 'null' => true, 'default' => null, 'length' => 10),
 		'user_id' => array('type' => 'integer', 'null' => true, 'default' => null),
 		'picture' => array('type' => 'string', 'null' => true, 'default' => null, 'length' => 200, 'collate' => 'latin1_swedish_ci', 'charset' => 'latin1'),
+		'group_id' => array('type' => 'integer', 'null' => true, 'default' => null),
 		'indexes' => array(
 			'PRIMARY' => array('column' => 'id', 'unique' => 1)
 		),
@@ -39,7 +40,8 @@ class TouristFixture extends CakeTestFixture {
 			'nationality' => 'Lorem ipsum dolor sit amet',
 			'level' => 1,
 			'user_id' => 1,
-			'picture' => 'Lorem ipsum dolor sit amet'
+			'picture' => 'Lorem ipsum dolor sit amet',
+			'group_id' => 1
 		),
 	);
 

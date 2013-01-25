@@ -3,12 +3,14 @@ App::uses('AppModel', 'Model');
 /**
  * User Model
  *
- * @property CommentsGuide $CommentsGuide
- * @property CommentsJourney $CommentsJourney
- * @property CommentsTrack $CommentsTrack
  * @property GuideSubmission $GuideSubmission
  * @property Guide $Guide
  * @property Tourist $Tourist
+ * @property Group $Group
+ * @property CommentsGuide $CommentsGuide
+ * @property CommentsJourney $CommentsJourney
+ * @property CommentsTrack $CommentsTrack
+ * @property Journey $Journey
  */
 class User extends AppModel {
 
@@ -19,45 +21,52 @@ class User extends AppModel {
  */
 	public $displayField = 'username';
 
+
+	//The Associations below have been created with all possible keys, those that are not needed can be removed
+
 /**
- * Validation rules
+ * hasOne associations
  *
  * @var array
  */
-	public $validate = array(
-		'username' => array(
-			'alphanumeric' => array(
-				'rule' => array('alphanumeric'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
+	public $hasOne = array(
+		'GuideSubmission' => array(
+			'className' => 'GuideSubmission',
+			'foreignKey' => 'user_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
 		),
-		'password' => array(
-			'alphanumeric' => array(
-				'rule' => array('alphanumeric'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
+		'Guide' => array(
+			'className' => 'Guide',
+			'foreignKey' => 'user_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
 		),
-		'email' => array(
-			'email' => array(
-				'rule' => array('email'),
-				//'message' => 'Your custom message here',
-				//'allowEmpty' => false,
-				//'required' => false,
-				//'last' => false, // Stop validation after this rule
-				//'on' => 'create', // Limit validation to 'create' or 'update' operations
-			),
-		),
+		'Tourist' => array(
+			'className' => 'Tourist',
+			'foreignKey' => 'user_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		)
 	);
 
-	//The Associations below have been created with all possible keys, those that are not needed can be removed
+/**
+ * belongsTo associations
+ *
+ * @var array
+ */
+	public $belongsTo = array(
+		'Group' => array(
+			'className' => 'Group',
+			'foreignKey' => 'group_id',
+			'conditions' => '',
+			'fields' => '',
+			'order' => ''
+		)
+	);
 
 /**
  * hasMany associations
@@ -104,34 +113,8 @@ class User extends AppModel {
 			'finderQuery' => '',
 			'counterQuery' => ''
 		),
-		'GuideSubmission' => array(
-			'className' => 'GuideSubmission',
-			'foreignKey' => 'user_id',
-			'dependent' => false,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'exclusive' => '',
-			'finderQuery' => '',
-			'counterQuery' => ''
-		),
-		'Guide' => array(
-			'className' => 'Guide',
-			'foreignKey' => 'user_id',
-			'dependent' => false,
-			'conditions' => '',
-			'fields' => '',
-			'order' => '',
-			'limit' => '',
-			'offset' => '',
-			'exclusive' => '',
-			'finderQuery' => '',
-			'counterQuery' => ''
-		),
-		'Tourist' => array(
-			'className' => 'Tourist',
+		'Journey' => array(
+			'className' => 'Journey',
 			'foreignKey' => 'user_id',
 			'dependent' => false,
 			'conditions' => '',

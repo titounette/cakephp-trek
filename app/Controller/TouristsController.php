@@ -48,7 +48,8 @@ class TouristsController extends AppController {
 			}
 		}
 		$users = $this->Tourist->User->find('list');
-		$this->set(compact('users'));
+		$groups = $this->Tourist->Group->find('list');
+		$this->set(compact('users', 'groups'));
 	}
 
 /**
@@ -74,7 +75,8 @@ class TouristsController extends AppController {
 			$this->request->data = $this->Tourist->read(null, $id);
 		}
 		$users = $this->Tourist->User->find('list');
-		$this->set(compact('users'));
+		$groups = $this->Tourist->Group->find('list');
+		$this->set(compact('users', 'groups'));
 	}
 
 /**
@@ -142,7 +144,8 @@ class TouristsController extends AppController {
 			}
 		}
 		$users = $this->Tourist->User->find('list');
-		$this->set(compact('users'));
+		$groups = $this->Tourist->Group->find('list');
+		$this->set(compact('users', 'groups'));
 	}
 
 /**
@@ -168,7 +171,8 @@ class TouristsController extends AppController {
 			$this->request->data = $this->Tourist->read(null, $id);
 		}
 		$users = $this->Tourist->User->find('list');
-		$this->set(compact('users'));
+		$groups = $this->Tourist->Group->find('list');
+		$this->set(compact('users', 'groups'));
 	}
 
 /**

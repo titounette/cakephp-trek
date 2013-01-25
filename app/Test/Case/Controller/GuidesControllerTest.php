@@ -15,11 +15,17 @@ class GuidesControllerTest extends ControllerTestCase {
 	public $fixtures = array(
 		'app.guide',
 		'app.user',
+		'app.group',
+		'app.guide_submission',
+		'app.tourist',
 		'app.comments_guide',
 		'app.comments_journey',
 		'app.comments_track',
-		'app.guide_submission',
-		'app.tourist'
+		'app.journey',
+		'app.zone',
+		'app.rate_journey',
+		'app.track',
+		'app.rate_guide'
 	);
 
 /**
