@@ -163,3 +163,6 @@
 2013-01-25 11:27:36 Error: [MissingControllerException] Controller class PagesController could not be found.
 #0 /Users/cecilesablayrolles/Sites/cakephp-trek/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #1 {main}
+2013-01-25 11:36:43 Error: [MissingControllerException] Controller class CommentsController could not be found.
+#0 /Users/cecilesablayrolles/Sites/cakephp-trek/app/webroot/index.php(92): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
