@@ -7,7 +7,7 @@
 #
 # Host: localhost (MySQL 5.1.44)
 # Database: trek
-# Generation Time: 2013-01-25 09:03:19 +0000
+# Generation Time: 2013-01-25 10:04:43 +0000
 # ************************************************************
 
 
@@ -187,6 +187,7 @@ CREATE TABLE `tracks` (
   `creator_id` int(11) DEFAULT NULL,
   `size` int(11) DEFAULT NULL,
   `level` int(11) DEFAULT NULL,
+  `name` varchar(30) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
 
